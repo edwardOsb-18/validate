@@ -1,0 +1,75 @@
+---
+import BotonFantasma from './BotonFantasma.astro'
+
+interface Props {
+    sub:string
+    titulo:string
+    descripcion:string
+    descripcion2:string
+    descripcion3?:string
+    descripcion4?:string
+    descripcion5?:string
+    url:string
+    img:string
+    order?:string
+}
+
+const {sub,titulo,descripcion,url,descripcion2,img,order,descripcion3,descripcion4,descripcion5}=Astro.props
+---
+
+
+<div  >
+
+    <div class="max-w-[1200px] mx-auto flex flex-col xl:flex-row items-center gap-10 xl:gap-24">
+  
+      <div class="flex flex-col gap-6 flex-1 xl:order-1">
+        <div class="flex-1 flex flex-col gap-4">
+          <h2 class="text-[#ffc057] text-xl ">{sub}</h2>
+          <h3 class="text-titulo text-3xl  font-bold xl:text-4xl">{titulo}
+          </h3>
+          <p class="text-titulo text-lg">{descripcion}</p> 
+          <p class="text-titulo text-lg">{descripcion2}</p> 
+
+
+          <p class="text-titulo text-lg">{descripcion3}</p> 
+          <p class="text-titulo text-lg">{descripcion4}</p> 
+          <p class="text-titulo text-lg">{descripcion5}</p> 
+
+          <BotonFantasma link={url} title="Solicitar demostración" img="/hand.svg"></BotonFantasma>
+        </div>
+
+
+ 
+
+
+      </div>
+      
+      
+      <div class={`flex flex-col gap-9 flex-1 ${order}`}>
+      
+      
+      
+      
+  
+      <figure><img src={img} alt=""></figure>
+      
+      
+    
+      
+      
+      </div>
+  
+  
+    </div>
+   
+    
+    
+    
+    </div>
+
+    <style>
+
+    .o{
+        order: 1;
+    }
+    </style>

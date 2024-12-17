@@ -1,0 +1,567 @@
+---
+
+import Estructura from "../layouts/Estructura.astro"
+import HeaderSecundario from "../components/HeaderSecundario.astro"
+
+ import Footer from "../components/Footer.astro"
+
+import BotonFantasma from "../components/BotonFantasma.astro"
+
+import SolucionesV from "../components/SolucionesV.astro"
+import Funcionav from "../components/Funcionav.astro"
+ 
+
+
+---
+
+<Estructura>
+
+<HeaderSecundario slot="header"></HeaderSecundario>
+
+
+<div class="portada relative h-screen    overflow-hidden " slot="main">
+	
+<img src="/fondov.webp" alt="" class="h-full w-full object-cover object-left ">
+
+	<div class="absolute w-full  xl:w-[42%] top-0 left-0 h-full flex flex-col justify-center items-center p-4 text-center xl:p-24 gap-4">  
+         <h2 class="text-secundari text-xl">Servicios</h2>
+<p class="text-white text-3xl  font-bold xl:text-[2.8rem] text-center xl:leading-normal">Verificación de Referencias Laborales</p>
+<p class="text-white text-lg xl:text-xl">Revisamos las experiencias de empleo de tus candidatos en proceso de selección a partir del contacto directo con sus líderes anteriores y las áreas de Talento Humano.</p>
+
+
+<BotonFantasma link="/contactanos" title="Solicitar demostración" img="/hand.svg"></BotonFantasma>
+
+
+
+  
+</div>
+</div>
+
+
+
+
+
+
+<div slot="main" class="max-w-[1200px] mx-auto flex flex-col xl:flex-row p-4 py-20  xl:py-40  gap-10  items-center " >
+
+
+<SolucionesV titulo="Verificación de Referencias Laborales" sub="Acerca del servicio" descripcion="Verificar que tu candidato tiene experiencia previa en las labores del cargo es una de las principales necesidades del proceso de selección." descripcion2="En Valídate nos remitimos a la Hoja de Vida de tu aspirante para revisar la veracidad de la información de sus experiencias laborales y examinar su desempeño en las tareas." img="prueba.jpg" url="/contactanos"></SolucionesV>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div slot="main" class="p-4 py-20  xl:py-40    bg-[#fcf8ff]" >
+
+    <SolucionesV titulo="Conoce la idoneidad de tus candidatos para ocupar el cargo" sub="Beneficios" descripcion="Toma las mejores decisiones en Talento Humano con nuestro equipo de verificación experto:" descripcion2="Cobertura en todo Perú." descripcion3="Verificación del desempeño de los colaboradores en sus trabajos previos." descripcion4="Contacto directo con sus líderes anteriores y las áreas de Talento Humano."  descripcion5="Informes siempre disponibles y en la nube." img="prueba.jpg" url="/contactanos" order="o"></SolucionesV>
+
+
+ 
+  
+  
+  
+  </div>
+
+
+
+
+ 
+    
+
+
+
+
+
+
+  <div slot="main" class=" p-4 py-20  xl:py-40   bg-primary" >
+
+    <div class="max-w-[1200px] mx-auto ">
+  
+  <Funcionav></Funcionav>
+      
+  
+  
+    </div>
+   
+    
+    
+    
+    </div>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div  slot="footer" class="bg-white p-4 py-8 xl:py-16 ">
+  <Footer ></Footer>
+</div>
+ 
+
+
+
+
+
+</Estructura>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+	.grupo__osb{
+		background-image: linear-gradient(rgb(2, 122, 255), rgb(29, 78, 216), rgb(30, 58, 138));
+	}
+
+.efecto{
+	/* clip-path: ellipse(20% 20% at 50% 0); */
+	clip-path: ellipse(0% 0% at 50% 0);
+	transition: clip-path 1.8s .1s;
+
+}
+
+
+.uno,.dos,.tres,.cinco,.seis,.siete,.cuatro,#siete,#ocho{
+	transform: translateY(200px);
+	opacity: 0;
+	transition: transform 1s,opacity 1s;
+}
+
+
+	.comparacion{
+		background-color: rgba(122, 252, 209, 0.055);
+		
+	}
+	.swiper-slide.nuevo img{
+		width: 386px;
+	}
+	.plan,.comparacion,.osb5{
+		background-image: url("/fondonew.svg");
+		background-size: cover;
+		background-attachment: fixed;
+		padding-bottom: 2.5rem;
+		/* max-width: 1300px;
+margin-inline: auto; */
+	}
+	.swiper-slide{
+		background: transparent;
+	}
+	.swiper-slide[data-astro-cid-j7pv25f6].nuevo img[data-astro-cid-j7pv25f6]{
+		width:1000px;
+	}
+
+
+
+
+
+
+
+
+	.confian{
+               
+			
+			   }
+			   
+			   .confian__img{
+			
+			   }
+			   @media screen and (min-width: 1200px) {
+				 .confian {
+				max-width: 1334px;
+				margin-inline: auto;
+				
+				 }
+			   }
+			   
+			   
+			   .confian__titulo{
+			   
+			   text-align: center;
+			   font-size: 1.5rem;
+			   margin-bottom: 0rem;
+			   }
+			   
+			   
+			   
+			   
+			   
+			   
+			   @media screen and (min-width: 1200px) {
+				 .confian__titulo {
+				  font-size: 2rem;
+				  line-height: 2.25rem;
+				  margin-top: 4rem;
+				  color: #10215b
+				 }
+			   }
+			   
+			   
+			   .confian__t{
+			 
+			   }
+			   
+			   
+			   .confian__logos{
+			 
+			   display: flex;
+			   flex-wrap: wrap;
+			   justify-content: center;
+			   }
+			   
+			   
+			   .confian__thumb{
+			
+				width:30%;
+			   }
+			   
+			   
+			   
+			   
+			   
+			   
+			   @media screen and (min-width: 1200px) {
+				 .confian__thumb {
+					
+				 }
+
+				 .swiper.mySwiper.osbu{
+					margin-top: -9rem;
+				 }
+			   }
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   .confian__img{
+			   
+			   }
+
+
+
+
+
+			   			   
+			   .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13rem;
+  overflow: hidden;
+  height: 3rem;
+  background-size: 300% 300%;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+  transition: 0.5s;
+  animation: gradient_301 5s ease infinite;
+  border: double 4px transparent;
+  background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+#container-stars {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+}
+
+strong {
+  z-index: 2;
+  font-family: 'Avalors Personal Use';
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: #FFFFFF;
+  text-shadow: 0 0 4px white;
+}
+
+#glow {
+  position: absolute;
+  display: flex;
+  width: 12rem;
+}
+
+.circle {
+  width: 100%;
+  height: 30px;
+  filter: blur(2rem);
+  animation: pulse_3011 4s infinite;
+  z-index: -1;
+}
+
+.circle:nth-of-type(1) {
+  background: rgba(254, 83, 186, 0.636);
+}
+
+.circle:nth-of-type(2) {
+  background: rgba(142, 81, 234, 0.704);
+}
+
+.btn:hover #container-stars {
+  z-index: 1;
+  background-color: #212121;
+}
+
+.btn:hover {
+  transform: scale(1.1)
+}
+
+.btn:active {
+  border: double 4px #FE53BB;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: none;
+}
+
+.btn:active .circle {
+  background: #FE53BB;
+}
+
+#stars {
+  position: relative;
+  background: transparent;
+  width: 200rem;
+  height: 200rem;
+}
+
+#stars::after {
+  content: "";
+  position: absolute;
+  top: -10rem;
+  left: -100rem;
+  width: 100%;
+  height: 100%;
+  animation: animStarRotate 90s linear infinite;
+}
+
+#stars::after {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+}
+
+#stars::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 170%;
+  height: 500%;
+  animation: animStar 60s linear infinite;
+}
+
+#stars::before {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+  opacity: 0.5;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-135rem);
+  }
+}
+
+@keyframes animStarRotate {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes gradient_301 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse_3011 {
+  0% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+			   
+.item{
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+input:not(input[type='submit']){
+	border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    margin-top: .4rem;
+    padding: .3rem;
+    transition: all .25s ease-in-out;
+}
+label{
+	font-size: 1rem;
+	font-weight: 500;
+	color: #111439;
+}
+video{
+	/* clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0); */
+}
+
+.list__item{
+display: flex;
+align-items: center;
+}
+.list__item::before{
+	content: "";
+	display: block;
+	background-image: url(/check.svg);
+	height: 30px;
+	width: 30px;
+	background-size: cover;
+}
+
+.desvanecer{
+  -webkit-mask-image: linear-gradient(black 85%, transparent);
+}
+</style>
+
+
+
+
+<script>
+  document.addEventListener("click",(e)=>{
+      const uno=e.target as HTMLElement
+     
+      const f=document.querySelector("form") as HTMLFormElement
+      console.log(uno)
+  if(uno.matches("#uno h3") || uno.matches("#uno img") ){
+    console.log("unoo")
+      const flecha=document.querySelector("#uno img") as HTMLElement
+      flecha.classList.toggle("rotacion")
+     const el= document.querySelector("#uno p") as HTMLElement
+  
+     el.classList.toggle("ver")
+  }
+  
+  
+  
+  
+  
+  })
+  
+    
+ 
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  </script>

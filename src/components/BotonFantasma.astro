@@ -1,0 +1,49 @@
+---
+interface Props {
+	title: string;
+  img:string,
+  link:string
+}
+
+const { title,img,link } = Astro.props;
+---
+
+
+<!-- <a href={link} class="px-3 py-3 h-[50px] text-white font-bold rounded-3xl bg-transparent flex justify-center items-center border-white border-2 border-solid text-center text-lg  gap-4  xl:text-3xl xl:w-[fit-content]  xl:border-[3px] xl:p-7 hover:backdrop-blur-sm" >
+    <img src={img} alt=" " class="lg:w-[45px]">
+    
+    {title}</a> -->
+
+
+
+    <!-- <a href={link} class="flex justify-center items-center gap-4 bg-transparent hover:backdrop-blur-sm  font-bold py-3 px-6 rounded-full shadow-lg shadow-neutral-950 hover:text-white transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce text-white text-2xl">
+        <img src={img} alt=" " class="lg:w-[45px]">
+    
+        {title}</a>
+      </a> -->
+
+
+      <a class="flex justify-center items-center gap-3 cursor-pointer  shadow-lg  bg-[#ffc057] px-4 py-2 active:translate-x-0.5 active:translate-y-0.5  transition text-[#5f0091] text-[1.1rem] xl:text-[1.3rem] backdrop-blur-sm hover:bg-primary hover:text-white w-fit" href={link}>
+        <!-- <img src={img} alt=" "  class="lg:w-[45px]"> -->
+    
+    {title}
+      </a>
+<style>
+    p{
+        box-shadow: 0px 0px 10px rgba(0, 207, 222, 0.28)
+    }
+
+    /* p::before{
+        content: " ";
+        display: block;
+        height: 20px;
+        height: 20px;
+        background-image: url("../../public/img/buy.svg");
+    } */
+a{
+    
+  
+    border-radius: 10px;
+    font-weight: 700;
+}
+</style>

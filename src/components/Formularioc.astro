@@ -1,0 +1,147 @@
+---
+interface Props {
+    titulo:string
+    sub?:string
+}
+
+const {titulo,sub}=Astro.props
+---
+
+
+<div class="p">
+
+  
+    <!-- <h1 class="text-3xl  text-secundario xl:text-5xl mb-6">{ ` Crea una ${sub?sub:"consulta"}` }</h1> -->
+
+    <form class="w-[100%] mx-auto" id="form">
+
+
+        <div class="relative z-0 w-full mb-5 group hidden scale-0">
+            <input type="text" name="emailjs_titulo" id="emailjs_titulo" class="block py-2.5 px-0 w-full text-base text-gray-400 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-white peer" placeholder=" " required value={titulo} />
+            <label for="emailjs_titulo"class="peer-focus:font-medium absolute text-base text-gray dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-gray peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombres y apellidos</label>
+        </div>
+
+      <div class="relative z-0 w-full mb-5 group">
+          <input type="text" name="emailjs_name" id="emailjs_name" class="block py-2.5 px-0 w-full text-base text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-white peer" placeholder=" " required />
+          <label for="emailjs_name" class="peer-focus:font-medium absolute text-base text-gray dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-gray peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombres y apellidos</label>
+      </div>
+  
+  
+  
+  
+  
+      <div class="relative z-0 w-full mb-5 group">
+        <input type="email" name="emailjs_email" id="emailjs_email" class="block py-2.5 px-0 w-full text-base text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-white peer" placeholder=" " required  autocomplete="off"/>
+        <label for="emailjs_email" class="peer-focus:font-medium absolute text-base text-gray dark:text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-gray peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Correo electrónico</label>
+    </div>
+  
+  
+  
+  
+  
+      <!-- <div class="grid md:grid-cols-2 md:gap-6">
+        <div class="relative z-0 w-full mb-5 group">
+            <input type="text" name="emailjs_dni" id="emailjs_dni" class="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+            <label for="emailjs_dni" class="peer-focus:font-medium absolute text-base text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">DNI</label>
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+            <input type="tel" name="emailjs_cel" id="emailjs_cel" class="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+            <label for="emailjs_cel" class="peer-focus:font-medium absolute text-base text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Celular</label>
+        </div>
+      </div> -->
+  
+  
+  
+      <div class="relative z-0 w-full mb-5 group">
+        <input type="text" name="emailjs_tema" id="emailjs_tema" class="block py-2.5 px-0 w-full text-base text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-white peer" placeholder=" " required />
+        <label for="emailjs_tema" class="peer-focus:font-medium absolute text-base text-gray dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-gray peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Celular</label>
+    </div>
+
+
+
+
+
+
+    <div class="relative z-0 w-full mb-5 group">
+      <input type="text" name="emailjs_dni" id="emailjs_dni" class="block py-2.5 px-0 w-full text-base text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-white peer" placeholder=" " required />
+      <label for="emailjs_dni" class="peer-focus:font-medium absolute text-base text-gray dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-gray peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Empresa</label>
+  </div>
+
+
+
+
+
+  
+
+    <!-- <div class="relative z-0 w-full mb-5 group">
+      <select name="emailjs_dni" id="emailjs_dni" class="block py-2.5 px-0 w-full text-base text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-white peer"  required >   <option value="menusal">Plan mensual</option>
+        <option value="anual">Plan anual</option>
+        <option value="migracion">Migracion</option>
+       
+      </select>
+     <label for="emailjs_dni" class="peer-focus:font-medium absolute text-base text-gray dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-gray peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Seleccione el plan</label> 
+  </div> -->
+
+  
+  
+    <div class="relative z-0 w-full mb-5 group">
+      <textarea  name="emailjs_descripcion" id="emailjs_descripcion" class="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+      <label for="emailjs_descripcion" class="peer-focus:font-medium absolute text-base text-gray dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Descripción</label>
+  </div> 
+  
+  
+  
+  
+  
+     
+      <input type="submit"  id="button" value="Enviar y obtener asesoría" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <figure id="loader" style="display:none" class="mx-auto w-[25%] mt-8">
+        <img src="/loader.svg" alt="">
+      </figure>
+    </form>
+    
+
+
+</div>
+
+
+
+
+
+<script is:inline type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script is:inline type="text/javascript">
+  emailjs.init('9Jnen7nAVFFHihDII')
+</script>
+
+<script is:inline>
+    const btn = document.getElementById('button');
+const loader=document.getElementById('loader')
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+   loader.style.display="block"
+   
+
+
+   btn.value = 'enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_pnf3348';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'mensaje enviado';
+      loader.style.display="none"
+      document.getElementById('form').reset()
+      setTimeout( ()=>{
+        btn.value = 'enviar';
+      },1000)
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+</script>
+

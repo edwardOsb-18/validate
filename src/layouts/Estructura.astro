@@ -1,0 +1,150 @@
+---
+import '@fontsource-variable/inter';
+interface Props {
+  titulo?:string
+  libreria?:string
+}
+// import '@fontsource/volkhov';
+// Supports weights 400-700
+// Supports weights 100-900
+const {titulo,libreria}=Astro.props
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valídate | {titulo}</title>
+
+    <link rel="stylesheet" href={libreria} />
+    
+</head>
+<body>
+    
+  <a
+  class="icono__flotante"
+  href="https://api.whatsapp.com/send?phone=51929675190&amp;text=Hola!%20Quiero%20asesoría%20para%20mi%20empresa!"
+  target="_blank"
+  ><img
+    class="logo__whatsapp "
+    src="https://edwardosb-18.github.io/tami_m/public/images/whatsapp.png"
+    alt=""
+/></a>
+<slot name="header" ></slot>
+
+
+
+
+
+<main class="min-h-screen" id="header">
+    <slot name="main" ></slot>
+</main>
+
+<slot name="footer"></slot>
+
+
+
+</body>
+</html>
+
+
+
+
+
+<style is:global>
+
+
+	:root {
+		--principal:#201b3f;
+    --secundario:white;
+    --tres:#3c347b;
+    --cuatro:#46399a;
+    --cinco:#5543bf;
+    --seis:#756ee6;
+
+   scroll-behavior: smooth;
+   /* scroll-margin-top: 1rem; */
+	}
+*{
+  font-family: 'Inter Variable', sans-serif;
+}
+
+ h2{
+  /* font-family: 'Lilita One', system-ui; */
+ font-weight: 700;
+  
+}
+
+   
+    html,
+    body {
+      position: relative;
+      height: 100%;
+      
+
+    }
+
+    body {
+      /* background: #027aff; */
+      background-color: white;
+      font-family: 'Inter Variable', sans-serif;
+      font-size: 15px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+      /* background-image: url(/map.svg); */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+    .swiper-slide img{
+        width: 35px;
+    }
+
+    .icono__flotante {
+  z-index: 20;
+  width: 65px;
+  right: 10px;
+  bottom: 10px;
+  position: fixed;
+  
+}
+
+@media screen and (min-width: 1200px) {
+  .icono__flotante  {
+    right: 16px;
+    width: 80px;
+  }
+}
+
+
+
+/* main{max-width: 1300px;
+margin-inline: auto;} */
+
+</style>
+
+

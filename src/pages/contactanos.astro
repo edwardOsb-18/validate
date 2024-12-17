@@ -1,0 +1,580 @@
+---
+import HeaderSecundario from "../components/HeaderSecundario.astro";
+import Estructura from "../layouts/Estructura.astro";
+import Footer from "../components/Footer.astro";
+import Formularioc from "../components/Formularioc.astro";
+import Formulario3 from "../components/Formulario3.astro";
+
+---
+
+<Estructura titulo="contactanos">
+    <HeaderSecundario slot="header"></HeaderSecundario>
+    <div class="pt-24 portada relative    overflow-hidden bg-[#48255a] xl:h-[300px] flex justify-center items-center " slot="main">
+
+      <p class="text-[white] text-2xl py-7 font-bold xl:text-4xl text-center xl:leading-normal max-w-[1200px] mx-auto uppercase">Contáctanos</p>
+
+
+
+  </div>
+
+
+<div slot="main">
+
+
+
+
+
+
+
+        <div class="map max-w-[1200px] mx-auto" id="contac">
+
+            <div class="map__thumb">
+
+                <iframe class="map__img" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1951.4138816693346!2d-77.08413257111307!3d-11.986416961859765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAv.%20el%20rosario%20urbanizaci%C3%B3n%20el%20rosario%20del%20norte%20Mz%20%22Y%22%20lote%2012%20segundo%20piso%20distrito%20de%20SMP!5e0!3m2!1ses-419!2spe!4v1708545726788!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+            <div class="dudas py-6 xl:py-0">
+                <div class="dudas__grupo1">
+                  <h2 class="dudas__titulo">
+                   Solicitar <span class="text-primary">Demo</span>
+                  </h2>
+                  <!-- <Formularioc titulo="contacto-ubicalo"></Formularioc> -->
+                   <Formulario3 titulo="validate"> </Formulario3>
+                </div>
+
+
+
+
+                      </div>
+
+
+
+            </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+  <div  slot="footer" class="bg-white">
+    <Footer ></Footer>
+  </div>
+   
+</Estructura>
+
+
+
+
+
+
+<style>
+
+    /* .start{
+        clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+    } */
+
+    .empresa__contenido-grupo2{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.empresa__item{
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  
+    padding: 1rem;
+    background-size: cover;
+    transition: transform .3s;
+}
+
+.empresa__descripcion-logo{
+    text-align: center;
+}
+
+.empresa__descripcion-logo-tituo{
+    color: white;
+}
+.empresa__descripcion-parrafo{color: white;}
+
+
+
+.map{
+    padding: 1rem;
+    margin-top: 4rem;
+}
+.map__img{
+    width: 100%;
+}
+
+.empresa__item:hover{
+    /* border: 2px dashed white; */
+    transform: scale(1.05);
+}
+
+
+@media screen and (min-width:1200px) {
+
+.empresa__contenido{
+    padding-bottom: 1rem;
+}
+
+    .empresa__contenido-grupo2{
+
+        flex-direction: row;
+
+    }
+    .map{
+        max-width: 1700px;
+        display: flex;
+        gap: 2rem;
+        margin-inline: auto;
+    }
+    .map__thumb{
+        flex: 1;
+        padding-top:3.5rem ;
+    }
+    .dudas{
+flex: 1;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dudas__items:focus{
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.26);
+  } */
+
+
+
+
+
+
+
+
+
+  .dudas {
+    padding: 2rem;
+
+  }
+
+
+
+  @media screen and (min-width: 1200px) {
+    .dudas {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      scroll-snap-align: center;
+      padding: 8rem 0rem ;
+      display: flex;
+padding-bottom: 2rem;
+      padding-top: 0;
+    }
+  }
+
+
+  .dudas__grupo1{
+  padding-inline: 1.65rem;
+  }
+
+
+
+  @media screen and (min-width: 1200px) {
+    .dudas__grupo1 {
+   flex: 1.5;
+    }
+  }
+
+
+
+
+
+
+
+
+
+  .dudas__grupo2{
+
+  /* background-image: url(../img/fondos/blob.svg); */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    .dudas__grupo2 {
+      flex: 1;
+      /* background-image: url(../img/fondos/AnimatedTransparentsvg.svg); */
+      background-position: left 3rem top -2.65rem;
+      background-position: auto;
+      background-size: cover;
+    }
+  }
+
+
+
+
+  .dudas__grupo2-img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    .dudas__grupo2-img {
+      width: 68%;
+      margin-left: 175px;
+      margin-top: 2rem;
+
+    }
+  }
+
+
+
+
+
+
+  .dudas__titulo {
+    margin-bottom: 2rem;
+    text-align: center; font-size: 1.3rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .dudas__titulo {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .dudas__t {
+    color: #7605f9;
+  }
+
+  .dudas__formulario {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    .dudas__formulario {
+      gap: 1.5rem;
+    }
+  }
+
+  .dudas__agrupado {
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .dudas__agrupado {
+      flex-direction: row;
+      gap: 6rem;
+    }
+  }
+
+  .dudas__item {
+    /* display: flex;
+    flex-direction: column; */
+
+    position: relative;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .dudas__item {
+       flex: 1;
+    }
+  }
+
+  .dudas__label {
+    /* display: flex;
+    gap: 0.2rem;
+    color: var(--bdsecudario1); */
+
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color:var(--fontUltimo);
+    pointer-events: none;
+    transition: .4s;
+    padding-left: .7rem;
+    color: #4e4e4e;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .dudas__label {
+      font-size: 1.3rem;
+    }
+  }
+
+  .dudas__thumb {
+  }
+
+  .dudas__img {
+  }
+
+  .dudas__items {
+    /* border: none;
+    border-bottom: 1px solid var(--colorSecundario);
+    background-color: rgb(238 238 238 / 25%);
+    padding: 0.4rem;
+    border-radius: 6px 6px 0px 0px; */
+
+
+
+
+    width: 100%;
+    padding: 1rem 0.75rem;
+
+    font-size: 16px;
+    color: var(--bdsecudario);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: rgba(0,0,0,0.03);
+    height: calc(3rem + 2px);
+    line-height: 1.25;
+
+    padding-top: 1.5REM;
+    padding-bottom: 0.5rem;
+
+
+    height: 45px;
+    line-height: 51px;
+    padding: 0 12px;
+    outline: none;
+    font-size: 16px;
+    color: #484848;
+    margin: 0 0 16px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #fff;
+    border: 2px solid #a8a8a8;
+    /* box-shadow: 0 1px 3px 0 rgba(0,0,0,.06); */
+    font-weight: 400;
+    opacity: 1;
+    border-radius: 15px;
+
+
+  color: #4e4e4eee;
+
+
+  margin-bottom: 2rem;
+
+
+
+  }
+
+
+  .dudas__items:focus{
+    border: 2px solid var(--bdsecudario1);
+  }
+
+
+  .dudas__items-area {
+
+
+
+    margin: 0;
+    height: 100px;
+
+  }
+
+
+
+
+
+
+  @media screen and (min-width: 1200px) {
+    .dudas__items {
+      font-size: 1.3rem;
+      height: calc(3rem + 2px);
+
+  margin-bottom: 0;
+    }
+
+
+
+  .dudas__items-area {
+
+
+
+    margin: 0;
+    height: 200px;
+
+  }
+  }
+
+
+  .dudas__submit {
+    display: inline-block;
+
+
+   margin: 2rem auto;
+    padding: 0.7rem;
+    color: white;
+    border: none;
+    background-color: var(--bdsecudario1);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color .3s;
+  }
+
+
+
+
+  .dudas__submit:hover{
+    background-color: var(--bdsecudario);
+  }
+
+  @media screen and (min-width: 1200px) {
+    .dudas__submit {
+      font-size: 1.3rem;
+      margin-block: 1rem;
+    }
+  }
+
+
+
+
+
+
+
+
+  .dudas__items:focus ~ .dudas__label,.dudas__items:valid ~ .dudas__label{
+    top: -30px;
+    left: 0;
+    color: #19307b;
+    font-size: 13px;
+    color: #4e4e4e;
+    font-weight: bold;
+
+  }
+
+
+
+  @media screen and (min-width: 1200px) {
+    .dudas__items:focus ~ .dudas__label,.dudas__items:valid ~ .dudas__label{
+     font-size: 15px;
+
+    }
+
+  }
+
+  .containera {
+    margin-top: 0rem;
+    padding-block: 4rem;
+    /* background-color: #1d4fd8b4 ; */
+    background-color: #00000014;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containera .glass {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(#fff2, transparent);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 -45px;
+  backdrop-filter: blur(10px);
+  transform: rotate(calc(var(--r) * 1deg));
+  background-color: white;
+}
+
+.containera:hover .glass {
+  transform: rotate(0deg);
+  margin: 0 10px;
+}
+
+.containera .glass::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1d4fd8;
+}
+.containera .glass svg {
+  font-size: 2.5em;
+  fill: #fff;
+}
+
+.portada{
+  background-image: url(/contactop.jpg);
+  background-position: center;
+}
+</style>

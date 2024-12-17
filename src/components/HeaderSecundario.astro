@@ -1,0 +1,522 @@
+
+<header class="header" >
+  
+
+   
+  <div class="contacto">
+    <div class="contacto__celular">
+      <div class="contacto__asesorate">Asesorate</div>
+      <a
+        class="contacto__link"
+        href="https://api.whatsapp.com/send?phone=519000227200&amp;text=Hola!%20Quiero%20asesoría%20para%20mi%20empresa!"
+        target="_blank"
+      >
+        <img
+          class="contacto__icel"
+          src="/img/icon/whatsapp.svg"
+          alt="número de whatsapp"
+        />
+        900022720
+      </a>
+    </div>
+    <div class="contacto__redes">
+      <a
+        href="https://www.facebook.com/share/V2egH5YttvV43khA/?mibextid=LQQJ4d" target="_blank"
+        class="contacto__icono"
+      >
+        <img
+          class="contacto__icono-logo"
+          src="/img/icon/facebook.svg"
+          alt="facebook"
+        />
+      </a>
+
+   
+    </div>
+  </div>
+
+    <nav class="menu max-w-[1200px] mx-auto">
+       <figure class="menu__logo">
+        <a href="/" class="menu__link">
+          <img
+            class="menu__ilogo xl:w-[200px]"
+            src="/logo12.png"
+            alt=""
+        /></a>
+      </figure> 
+      <ul class="menu__opciones items-center text-white">
+        <li class="menu__item">
+          <a id="header1" href="/" class="menu__link">Inicio</a></li>
+          <li class="menu__item">
+            <a href="#header" class="menu__link chil soluciones flex">Servicios<img id="soluciones" src="/abajo.svg" alt=""></a>
+            <div class="solucionesText">
+              <ul class="pl-4 pt-0 flex flex-col gap-4 font-normal xl:gap-4 text-slate-700">
+              <li class="flex items-center gap-1"> <figure class="bg-secundari  xl:bg-primary rounded-xl p-1"></figure><a class="flex items-center w-[125px] gap-2" href="/visitas-domiciliarias">Visitas Domiciliarias</a> </li>
+               <li class="flex items-center gap-1"> <figure class="bg-secundari xl:bg-primary rounded-xl p-1"></figure> <a href="/estudios-seguridad">Estudios de Seguridad</a></li>
+              <li class="flex items-center gap-1"> <figure class="bg-secundari xl:bg-primary rounded-xl p-1"><img src="/clientes.svg" alt=""></figure><a href="/verificacion-antecedentes">Verificación de Antecedentes</a> </li>
+              <li class="flex items-center gap-1" > <figure class="bg-secundari xl:bg-primary rounded-xl p-1"></figure> <a href="/soporte-emocional-empresarial">Soporte Emocional Empresarial</a></li> 
+
+
+
+               <li class="flex items-center gap-1" > <figure class="bg-secundari xl:bg-primary rounded-xl p-1"></figure><a href="/visitas-domiciliarias-teletrabajo">Visitas Domiciliarias para el Teletrabajo</a></li> 
+
+
+              <li class="flex items-center gap-1" > <figure class="bg-secundari xl:bg-primary rounded-xl p-1"></figure><a href="/pruebas-poligrafias">Pruebas de Poligrafía</a></li> 
+
+              <li class="flex items-center gap-1" > <figure class="bg-secundari xl:bg-primary rounded-xl p-1"></figure><a href="/verificacion-laborales">Verificación de Referencias Laborales</a></li> 
+
+              <li class="flex items-center gap-1" > <figure class="bg-secundari xl:bg-primary rounded-xl p-1"></figure><a href="/verificacion-academicas">Verificación de Referencias Academicas</a></li>  
+
+            </ul></div>
+          </li>
+        <li class="menu__item">
+          <a id="contacto1"   href="/contactanos/" class="menu__link a bg-[#ffc057] text-[#5f0091] p-2 px-6 rounded-md">Solicitar Demo</a>
+        </li>
+        <!-- <li class="menu__item">
+          <a id="cotizacion1"   href="#cotizacion" class="menu__link"> cotización</a>
+        </li> -->
+      </ul>
+      <div class="menu__derecha">
+        <!-- <div class="menu__ingresar">
+          <a class="menu__ingresar-link" href="pages/index.html"
+            >Ingresar</a
+          >
+        </div> -->
+        <div class="menu__boton">
+          <div class="menu__raya"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <style>
+
+
+
+
+
+
+.logo__whatsapp {
+  width: 80%;
+}
+
+.header {
+  background-color: #ee3c5f;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  /* position: sticky;
+  top: 0px; */
+  z-index: 10;
+  /* transition: background .3s; */
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+  }
+}
+
+.contacto {
+  display: flex;
+  justify-content: space-between;
+  background-color: #5f0091;
+  padding: 0.5em 1em;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacto {
+    height: 38px;
+    padding: 0.5em 2em;
+    display: block;
+    display: flex;
+  }
+}
+
+.contacto__asesorate {
+  color: white;
+}
+.contacto__celular {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.contacto__link {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.contacto__icel {
+}
+
+.contacto__numero {
+  color: white;
+}
+
+.contacto__redes {
+  display: flex;
+  gap: 1rem;
+}
+
+.contacto__icono {
+}
+
+.contacto__icono-logo {
+}
+
+.menu {
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.1rem 1em;
+  align-items: center;
+  /* background: #027aff; */
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    height: 80px;
+    /* justify-content: space-evenly; */
+    gap: 4rem;
+   
+    align-items: center;
+  }
+}
+
+.menu__logo {
+  margin: 0;
+  position: relative;
+  z-index: 40;
+  width: 185px;
+}
+.menu__ilogo {
+  width: 125px;
+
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__ilogo {
+    width: 150px;
+    height: auto;
+  }
+}
+
+.menu__opciones {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  opacity: 0;
+
+  transition: opacity .2s;
+  pointer-events: none;
+}
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+  .menu__opciones {
+font-size:1.05rem; 
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+.menu__opciones--visible {
+  
+  font-size: 1rem;
+  transition: opacity .5s;
+  pointer-events: initial;
+  opacity: 1;
+  background: #7605f9;
+  z-index: 30;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+
+  top: 0px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+ 
+}
+
+
+.menu__opciones--visible .menu__link{
+  border-bottom: 3px solid #FEF1DE;
+  color: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__opciones {
+    display: flex;
+    gap: 5rem;
+    opacity: 1;
+    pointer-events: initial;
+  }
+}
+
+.menu__item {
+  color: white;
+}
+ @media screen and (min-width:1200px) {
+  .menu__item {
+  color: currentColor;
+}
+ }
+.menu__link {
+  color: transparent;
+ 
+  display: flex;padding-bottom: 4px;
+}
+
+.menu__link--active{
+
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__link {
+    color: currentColor;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+  }
+
+
+  .menu__link--active{
+    border-bottom: 2px solid beige;
+    padding-bottom: .1rem;
+  }
+}
+
+.menu__boton {
+  width: 36px;
+  height: 30px;
+  position: relative;
+  z-index: 40;
+  transition: transform 0.5s;
+}
+
+
+.menu__derecha {
+  display: flex;
+  gap: 1.5rem;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .menu__boton {
+    display: none;
+
+  }
+  .menu__derecha {
+  display: none;
+ 
+}
+}
+
+.menu__raya {
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.menu__boton::before {
+  content: "";
+  height: 3px;
+  background-color: white;
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: transform 0.5s;
+}
+
+.menu__boton::after {
+  height: 3px;
+  content: "";
+  background-color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: transform 0.5s;
+}
+.visible {
+  transform: rotate(1turn);
+}
+
+.visible::before {
+  top: 15px;
+  transform: translateY(-60%) rotate(45deg);
+}
+
+.visible::after {
+  bottom: 15px;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+.visible .menu__raya {
+  display: none;
+}
+
+
+
+.menu__ingresar {
+  padding: 0.4rem;
+  background: white;
+  border-radius: 6px;
+  color: var(--principal);
+}
+.menu__ingresar-link{
+  color: var(--principal);
+
+}
+
+
+@keyframes blur {
+    to {
+        box-shadow: 0 5px 50px -5px #0000001a,0 0 0 1px #0000004d;
+        background: #0000004d;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px)
+    }
+}
+
+
+
+
+
+.solucionesText{
+  display: none;
+  padding-top: 1rem;
+}
+.sectoresText{
+  display: none;
+  z-index: 1000;
+}
+
+@media screen and (min-width:1200px){
+
+  .soluciones,.sectores{
+    position: relative;
+  }
+  .solucionesText{
+    position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 20px rgba(153, 174, 205, .64);
+  border-radius: 16px;
+  top: 4.5rem;
+    padding-block: 2rem;
+    padding-inline: 2rem;
+    z-index: 100;
+  }
+}
+
+.vis{
+  display: block;
+}
+
+.rotate{
+  transform: rotate(180deg);
+}
+a{
+  width: 100%;
+}
+.a{color:#5f0091}
+  </style>
+
+
+<script>
+
+
+const soluciones=document.querySelector(".soluciones") as HTMLElement
+const sectores=document.querySelector(".sectores") as HTMLElement
+
+
+const solucionesText=document.querySelector(".solucionesText") as HTMLElement
+
+const sectoresText=document.querySelector(".sectoresText") as HTMLElement
+
+const solucionesF=document.getElementById("soluciones") as HTMLElement
+const sectoresF=document.getElementById("sectores") as HTMLElement
+
+soluciones.addEventListener("click",(e:any)=>{
+  const el=e.target as HTMLElement
+e.preventDefault()
+console.log(e.target)
+solucionesText.classList.toggle("vis")
+solucionesF.classList.toggle("rotate")
+sectoresText.classList.remove("vis")
+sectoresF.classList.remove("rotate")
+})
+
+// const headerMain=document.querySelector(".header") as HTMLElement
+
+// window.addEventListener("scroll",(e)=>{
+//   console.clear()
+//     var scrollPos = window.scrollY + window.innerHeight;
+//     var elementoPos = headerMain.offsetTop + headerMain.offsetHeight / 2;
+// console.log(scrollPos,elementoPos)
+//     if (scrollPos > elementoPos) {
+//       headerMain.style.background="#0000004d";
+//       headerMain.style.backdropFilter="blur(10px)"
+//     }
+//     if(scrollY === 0){
+//       headerMain.style.background="transparent";
+//       headerMain.style.backdropFilter="blur(0)"
+//     }
+// })
+
+
+
+
+console.log("first")
+
+const $boton=document.querySelector(".menu__boton")
+const $opciones=document.querySelector(".menu__opciones") as HTMLElement
+
+const $raya=document.querySelector(".menu__raya")
+const $before=document.querySelector(".menu__raya::before")
+
+const $after=document.querySelector(".menu__raya::after")
+document.addEventListener("click",(e)=>{
+if(e.target !== null && e.target instanceof HTMLElement){
+  if(e.target.matches(".menu__boton")){
+
+console.log("first")
+$opciones.classList.toggle("menu__opciones--visible")
+e.target.classList.toggle("visible")
+// $raya.style.display="none"
+// $before.classList.toggle("before")
+
+// $after.classList.toggle("after")
+
+
+}
+}
+   
+
+
+})
+
+</script>

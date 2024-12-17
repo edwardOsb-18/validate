@@ -1,0 +1,70 @@
+---
+interface Props {
+    pregunta:string,
+    descripcion:string
+    img:string
+}
+
+const{pregunta,descripcion,img}=Astro.props
+---
+
+<div class="item cursor-pointer">
+    <div class="flex titulo font-semibold gap-1">
+<figure><img  src="/abajo2.svg" alt=""></figure>
+<img class="ro" src={img}  alt="">
+<h3>{pregunta}</h3>
+
+
+    </div>
+    <p class="mt-3">{descripcion}</p>
+</div>
+
+
+<style>
+    .rotacion{
+        transform: rotate(0);
+    }
+   
+    .item{
+        padding: 16px 20px 16px 16px;
+        border-radius: 14px;
+        border: 2px solid #e8effc;
+    font-size: .85rem;
+        overflow: hidden;
+    }
+
+    @media screen and (min-width:1200px) {
+        .item{
+             padding: 16px 20px 16px 16px;
+        }
+    }
+   img{
+        transform: rotate(-100deg);
+        /* width: 19px; */
+    }
+    .ro{
+        transform: rotate(0);
+    }
+
+    .ver{
+        display: block;
+    }
+
+    .visible{
+      
+    }
+p{
+    display: none;
+}
+</style>
+
+
+<script>
+    const img=document.querySelector("img") as HTMLElement
+const titulo=document.querySelector(".titulo") as HTMLElement
+// titulo.addEventListener("click",(e:Event)=>{
+// img.classList.add("rotacion")
+// console.log("Ss")
+// })
+
+</script>

@@ -1,0 +1,166 @@
+---
+import FooterFormas from "../components/FooterFormas.astro"
+---
+
+
+
+<footer class="footer p-3 text-white pt-6  max-w-[1300px] mx-auto bg-white" id="contacto">
+
+
+
+
+<div class="grupo2 xl:flex xl:gap-8">
+    <figure class="border-t-2  pb-4 text-[1rem] border-gray-300 xl:border-none xl:flex-1 xl:mt-[-1.5rem]"><img src="/logo13.png"  class="w-[130px] xl:w-[180px] xl:mt-[0]" alt="" > 
+
+        
+
+
+
+
+
+
+          
+        <!-- <figcaption class="text-[#10215b]  ">"Copyright © 2024 Valídate S.A.C . Todos los derechos reservados."</figcaption> -->
+      
+        <figcaption class="text-[#10215b]  ">Construimos vínculos confiables entre empresas y candidatos</figcaption>
+      
+        <div class="contacto__redes flex order-1 gap-6 pt-4 ">
+          <a
+            href="https://web.facebook.com/Facturasimple.pe?locale=es_LA"
+            class="contacto__icono " target="_blank"
+          >
+            <img
+              class="contacto__icono-logo"
+              src="/icon/brand-facebook.svg"
+              alt="facebook"
+            />
+          </a>
+  
+         
+
+        </div> 
+      
+      
+      
+      
+      
+      
+      
+      </figure>
+
+
+ <div class="osb22 flex flex-col">
+
+    <div class="formas mb-6 flex gap-4 flex-col  order-1 xl:text-2xl xl:gap-4 xl:flex-[1.5]">
+        <h2 class="mb-0  text-[#10215b] text-[1.2rem] font-bold xl:text-[1.2rem] xl:mb-0">CONTÁCTENOS</h2>
+
+  
+        <div class="formas1 flex gap-3">
+        
+        <FooterFormas title="Dirección" descripcion="Av. el Rosario, urb el rosario del norte MZ  Y LT 12, piso 2 SMP." imagen="/icon/map-pin.svg"></FooterFormas>
+                  
+        <FooterFormas title="Horario de atención" descripcion="Lunesa a sabado: 8:00 a.m - 5:00 p.m." imagen="/icon/clock-hour.svg"></FooterFormas>
+   
+        </div>
+        
+        
+        
+        <div class="formas2 flex gap-3">
+            <FooterFormas title="Celular" descripcion="+51 900 022 720" imagen="/icon/device-mobile.svg"></FooterFormas>
+            <FooterFormas title="Correo" descripcion="comercial@validate.pe" imagen="/mail.svg"></FooterFormas>
+           
+        
+        </div>
+        
+        
+        
+        
+        
+        
+        </div>
+        
+         <!-- <div class="contacto__redes flex order-1 gap-6">
+            <a
+              href="https://web.facebook.com/Facturasimple.pe?locale=es_LA"
+              class="contacto__icono" target="_blank"
+            >
+              <img
+                class="contacto__icono-logo"
+                src="/icon/brand-facebook.svg"
+                alt="facebook"
+              />
+            </a>
+    
+            <a href="https://www.instagram.com/factura.simple?igsh=OGR1cXVzb3JnNzB3" class="contacto__icono" target="_blank">
+              <img
+                class="contacto__icono-logo"
+                src="/icon/brand-instagram.svg"
+                alt="instagran"
+              />
+            </a>
+    
+            <a
+              href="https://www.youtube.com/@facturasimple"
+              class="contacto__icono"
+              target="_blank"
+            >
+              <img
+                class="contacto__icono-logo"
+                src="/icon/brand-youtube.svg"
+                alt="linkendin"
+              />
+            </a>
+
+            <a
+            href="https://www.tiktok.com/@facturasimple?_t=8kSBJCKDpqA&_r=1"
+            class="contacto__icono" target="_blank"
+          >
+            <img
+              class="contacto__icono-logo"
+              src="/icon/brand-tiktok.svg"
+              alt="linkendin"
+            />
+          </a>
+
+          </div>   -->
+      
+</div> 
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</footer>
+
+
+
+<style>
+    .footer{
+        {max-width: 1300px;
+margin-inline: auto;}
+    }
+
+    .contacto__icono-logo{
+        border-radius: 50%;
+    padding: 0.2rem;
+    border: 2px solid rgb(0 0 0 / 10%);
+;
+    }
+    a{
+      transition: transform .3s;
+    }
+.contacto__icono-logo{
+  padding: .4rem;
+}
+
+    a:hover{
+      transform: translateY(-2px);
+    }
+</style>
